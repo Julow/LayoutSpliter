@@ -1,0 +1,29 @@
+[
+	{
+		"caption": "SublimeLayout: Split Orizontal",
+		"command": "juloo_sublime_layout",
+		"args":
+		{
+			"action": "split",
+			"direction": "orizontal"
+		}
+	},
+	{
+		"caption": "SublimeLayout: Split Vertical",
+		"command": "juloo_sublime_layout",
+		"args":
+		{
+			"action": "split",
+			"direction": "vertical"
+		}
+	},
+	{
+		"caption": "SublimeLayout: Reset",
+		"command": "juloo_sublime_layout",
+		"args":
+		{
+			"action": "reset",
+			"direction": ""
+		}
+	}
+]
