@@ -64,7 +64,7 @@ class JulooSublimeLayoutCommand(sublime_plugin.WindowCommand):
 		if args["action"] == "split":
 			if args["direction"] == "vertical":
 				cases.append(curr_case.split_vertical())
-			elif args["direction"] == "orizontal":
+			elif args["direction"] == "horizontal":
 				cases.append(curr_case.split_orizontal())
 		elif args["action"] == "reset":
 			cases = [Case(0, 0, 1, 1)]

@@ -1,11 +1,11 @@
 [
 	{
-		"caption": "SublimeLayout: Split Orizontal",
+		"caption": "SublimeLayout: Split Horizontal",
 		"command": "juloo_sublime_layout",
 		"args":
 		{
 			"action": "split",
-			"direction": "orizontal"
+			"direction": "horizontal"
 		}
 	},
 	{
