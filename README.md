@@ -1,6 +1,20 @@
 # JulooSublimeLayout
 
-Change easily the layout on Sublime Text
+Change easily the Sublime Text layout
+
+Split vertically or horizontally the layout.
+
+![Example](/captures/example.png)
+
+No limit !
+
+### Commands
+
+![Commands](/captures/commands.png)
+
+`Split vertical` (Split the current view vertically into 2 equal parts)
+`Split horizontal` (Split the current view horizontally into 2 equal parts)
+`Reset` (Reset the layout: 1 view)
 
 ### Installation
 
