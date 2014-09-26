@@ -12,9 +12,9 @@ No limit !
 
 ![Commands](/captures/commands.png)
 
-`Split vertical` (Split the current view vertically into 2 equal parts)
-`Split horizontal` (Split the current view horizontally into 2 equal parts)
-`Reset` (Reset the layout: 1 view)
+* `Split vertical` (Split the current view vertically into 2 equal parts)
+* `Split horizontal` (Split the current view horizontally into 2 equal parts)
+* `Reset` (Reset the layout: 1 view)
 
 ### Installation
 
