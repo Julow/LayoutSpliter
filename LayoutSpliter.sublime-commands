@@ -1,7 +1,7 @@
 [
 	{
 		"caption": "SublimeLayout: Split Horizontal",
-		"command": "juloo_sublime_layout",
+		"command": "juloo_layout_spliter",
 		"args":
 		{
 			"action": "split",
@@ -10,7 +10,7 @@
 	},
 	{
 		"caption": "SublimeLayout: Split Vertical",
-		"command": "juloo_sublime_layout",
+		"command": "juloo_layout_spliter",
 		"args":
 		{
 			"action": "split",
@@ -19,7 +19,7 @@
 	},
 	{
 		"caption": "SublimeLayout: Reset",
-		"command": "juloo_sublime_layout",
+		"command": "juloo_layout_spliter",
 		"args":
 		{
 			"action": "reset",

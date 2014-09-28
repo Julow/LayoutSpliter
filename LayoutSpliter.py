@@ -28,7 +28,7 @@ class Case():
 	def __repr__(self):
 		return str(self.left) +" "+ str(self.top) +" "+ str(self.right) +" "+ str(self.bottom)
 
-class JulooSublimeLayoutCommand(sublime_plugin.WindowCommand):
+class JulooLayoutSpliterCommand(sublime_plugin.WindowCommand):
 
 	def cases_to_layout(self, cases):
 		cols = []
