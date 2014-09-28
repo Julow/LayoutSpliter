@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, time
+import sublime, sublime_plugin
 
 class Case():
 
@@ -19,14 +19,11 @@ class Case():
 		self.right = middle
 		return case
 
-	def split_orizontal(self):
+	def split_horizontal(self):
 		middle = round((self.bottom - self.top) / 2 + self.top, 2)
 		case = Case(self.left, middle, self.right, self.bottom)
 		self.bottom = middle
 		return case
-
-	def __repr__(self):
-		return str(self.left) +" "+ str(self.top) +" "+ str(self.right) +" "+ str(self.bottom)
 
 class JulooLayoutSpliterCommand(sublime_plugin.WindowCommand):
 
@@ -65,7 +62,7 @@ class JulooLayoutSpliterCommand(sublime_plugin.WindowCommand):
 			if args["direction"] == "vertical":
 				cases.append(curr_case.split_vertical())
 			elif args["direction"] == "horizontal":
-				cases.append(curr_case.split_orizontal())
+				cases.append(curr_case.split_horizontal())
 		elif args["action"] == "reset":
 			cases = [Case(0, 0, 1, 1)]
 		self.window.run_command("set_layout", self.cases_to_layout(cases))
