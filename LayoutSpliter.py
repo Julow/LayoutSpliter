@@ -25,6 +25,23 @@ class Case():
 		self.bottom = middle
 		return case
 
+	def merge(self, cases):
+		for c in cases:
+			if c.right == self.right and c.left == self.left and ((c.top == self.bottom) or (c.bottom == self.top)):
+				self.top = min(c.top, self.top)
+				self.bottom = max(c.bottom, self.bottom)
+			elif c.top == self.top and c.bottom == self.bottom and ((c.right == self.left) or (c.left == self.right)):
+				self.left = min(c.left, self.left)
+				self.right = max(c.right, self.right)
+			else:
+				continue
+			c.left = 0
+			c.top = 0
+			c.right = 0
+			c.bottom = 0
+			cases.remove(c)
+			return
+
 class JulooLayoutSpliterCommand(sublime_plugin.WindowCommand):
 
 	def cases_to_layout(self, cases):
@@ -63,6 +80,8 @@ class JulooLayoutSpliterCommand(sublime_plugin.WindowCommand):
 				cases.append(curr_case.split_vertical())
 			elif args["direction"] == "horizontal":
 				cases.append(curr_case.split_horizontal())
+		elif args["action"] == "merge":
+			curr_case.merge(cases)
 		elif args["action"] == "reset":
 			cases = [Case(0, 0, 1, 1)]
 		self.window.run_command("set_layout", self.cases_to_layout(cases))

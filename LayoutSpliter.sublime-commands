@@ -18,6 +18,15 @@
 		}
 	},
 	{
+		"caption": "LayoutSpliter: Merge",
+		"command": "juloo_layout_spliter",
+		"args":
+		{
+			"action": "merge",
+			"direction": ""
+		}
+	},
+	{
 		"caption": "LayoutSpliter: Reset",
 		"command": "juloo_layout_spliter",
 		"args":
