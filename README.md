@@ -12,6 +12,7 @@ Split vertically or horizontally the layout.
 
 * `Split vertical` (Split the current view vertically into 2 equal parts)
 * `Split horizontal` (Split the current view horizontally into 2 equal parts)
+* `Merge` (Merge 2 splitted views into 1)
 * `Reset` (Reset the layout: 1 view)
 
 *No limit !*
