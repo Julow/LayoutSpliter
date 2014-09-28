@@ -1,4 +1,4 @@
-# JulooSublimeLayout
+# LayoutSpliter
 
 Change easily the Sublime Text layout
 
@@ -18,7 +18,9 @@ No limit !
 
 ### Installation
 
-`git clone` this repo in `%Sublime text location%/Packages/JulooSublimeLayout`
+_Not available on Package Control yet_
+
+`git clone` this repo in `%Sublime text location%/Packages/LayoutSpliter`
 
 Folder name does not matter but it must be in `Packages/`
 
