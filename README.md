@@ -1,3 +1,6 @@
+Please use [Juloo-Sublime-Package](https://github.com/Julow/Juloo-Sublime-Package).<br />
+Contains this plugin and some cool stuffs
+
 # LayoutSpliter
 
 Change easily the Sublime Text layout
